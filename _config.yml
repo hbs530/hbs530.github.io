@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "hbs530"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/2023-09-26-first/stevejobs.jpg"
   bio              : "hbs530의 샘플 블로그입니다"
   location         : "South Korea"
   email            :
@@ -119,13 +119,25 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hbs530/hbs530.github.io"
-
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/"
+      
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "hbs530@naver.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://hbs530.gihub.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/hbs530/hbs530.github.io
+      url: "https://github.com/hbs530/hbs530.github.io"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/"
 
 
 # Reading Files
@@ -206,6 +218,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -214,6 +227,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
+
 
 
 # Archives
@@ -267,5 +282,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true  
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fa-solid fa-utensils"
 
 date_format: "%Y-%m-%d"
